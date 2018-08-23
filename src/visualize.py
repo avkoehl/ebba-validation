@@ -13,6 +13,7 @@ def make_html (fname):
     path = "../assets/images/"
     print ("<doctype HTML><head><title>visualize clusters</title></head><body>", file= o)
     print ("<style> img { width: 75px; } </style>", file=o)
+    print ("<p> download clusters file: <a href=\"../data/clusters/" + fname + "\">"+ fname + " </a></p>", file=o)
     clusters = get_clusters(fname)
     nimgs = 0
     for i in clusters:
